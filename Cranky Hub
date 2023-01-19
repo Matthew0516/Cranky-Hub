@@ -54,6 +54,10 @@ tab:CreateButton("Force reset/Auto criminal", function()
     plr.Character:Destroy()
 end)
 
+tab:CreateButton("Silent Aim", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/Silentaim/main/Cranky%20Hub", true))()
+     end)
+
 --credits
 local tab = main:CreateTab("Credits")
 
