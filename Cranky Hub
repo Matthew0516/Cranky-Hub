@@ -13,10 +13,19 @@ local main = library:CreateMain("Cranky Hub", "Beta Testing", Enum.KeyCode.LeftA
 
 --main
 local tab = main:CreateTab("Main")
+
 --scripts for main
 tab:CreateButton("Fly (e)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/fly-script/main/Cranky%20Hub", true))()
-    end)
+end)
+
+tab:CreateButton("Noclip/Clip (x)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/Noclip/main/Cranky%20Hub", true))()
+end)
+
+tab:CreateButton("Godmode", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/Godmode/main/Cranky%20Hub", true))()
+end)
 
 tab:CreateToggle("This ability makes you run like a nigger", function(value)
     if value then
@@ -36,12 +45,27 @@ end)
 --misc
 local tab = main:CreateTab("Misc")
 
-tab:CreateButton("Godmode", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/Godmode/main/Cranky%20Hub", true))()
-end)
+tab:CreateButton("Grab All Guns", function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew0516/GrabAllGuns/main/Cranky%20Hub", true))()
+     end)
 
 tab:CreateButton("Force reset/Auto criminal", function()
     plr = game:GetService("Players").LocalPlayer
     plr.Character:Destroy()
 end)
-    
+
+--credits
+local tab = main:CreateTab("Credits")
+
+tab:CreateLabel("Owner of Cranky Hub : cranky#3929")
+
+tab:CreateButton("Copy discord", function()
+
+setclipboard("cranky#3929")
+game.StarterGui:SetCore("SendNotification", {
+Title = "Discord Copied!";
+Text = "Thanks for using Cranky Hub "..game.Players.LocalPlayer.Name;
+Duration = math.huge;
+Button1 = "Okay"
+})
+end)
