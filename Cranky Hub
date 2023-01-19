@@ -15,7 +15,7 @@ local main = library:CreateMain("Cranky Hub", "Beta Testing", Enum.KeyCode.LeftA
 local tab = main:CreateTab("Main")
 
 tab:CreateButton("Fly (e)", function()
-    loadstring(game.HttpGet('https://pastebin.com/raw/snDPg81C'))()
+    loadstring(game.HttpGet('https://raw.githubusercontent.com/Matthew0516/fly-script/main/Cranky%20Hub?token=GHSAT0AAAAAAB5WH6LLCGAFAL25XEJHDTAOY6JOWTA'))()
     end)
 
 
